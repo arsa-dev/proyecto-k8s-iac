@@ -8,9 +8,9 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`helloworld.sem-ugr-k8s.arsahosting.com`)
+      match: Host(`helloworld.kswap.local.arsa.dev`)
       services:
         - name: base-helloworld-service
           port: 80
-  tls:
-    secretName: tls.sem-ugr-k8s.arsahosting.com
+  tls: {}
+    # secretName: tls.sem-ugr-k8s.arsahosting.com
